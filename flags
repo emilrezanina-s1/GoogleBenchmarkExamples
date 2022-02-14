@@ -1,0 +1,10 @@
+-std=c++11
+-isystem /Users/emilrezanina/git/utils/benchmark/include
+-L /Users/emilrezanina/git/utils/benchmark/build/src
+-lbenchmark 
+-lpthread
+-fno-exceptions
+-fno-rtti
+-fno-omit-frame-pointer
+-Wall
+-pedantic
