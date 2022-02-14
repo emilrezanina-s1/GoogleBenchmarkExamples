@@ -90,7 +90,7 @@ Benchmarks are executed by running the produced binaries. Benchmarks binaries, b
 ./bench
 
 # Runs all tsts that are in the binary and contain "String" regex (it is case sensitive)
-./bench --bencharmk_filter=String
+./bench --benchmark_filter=String
 ```
 
 ### Outputs
@@ -106,7 +106,7 @@ Examples:
 ./bench --benchmark_format=console --benchmark_out=output.json --benchmark_out_format=json
 ```
 
-TODO: obrazek
+![optimization_bench_output_aggregated.png](./8_optimization/optimization_bench_output_aggregated.png)
 
 We can also add own information to the output using the ```--benchmark_context``` option. For example:
 
