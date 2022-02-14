@@ -195,6 +195,8 @@ Without UseRealTime, CPU time is used by default.
 
 File: [optimization](./8_optimization/bench.cpp)
 
+In these examples we find time control over certain parts of the test (```state.PauseTiming()``` and ```state.ResumeTiming()```). Turning off optimization for a section of code (```benchmark::DoNotOptimize```).
+
 ![optimization_bench_output.png](./8_optimization/optimization_bench_output.png)
 
 ![optimization_bench_output_aggregated.png](./8_optimization/optimization_bench_output_aggregated.png)
