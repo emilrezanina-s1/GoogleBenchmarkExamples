@@ -116,6 +116,20 @@ We can also add own information to the output using the ```--benchmark_context``
 
 We can use [compare.py](https://github.com/google/benchmark/blob/main/docs/tools.md) to compare the outputs.
 
+### Iterations and Repetitions
+
+Google Benchmark uses two settings to control how many times to run each benchmark, ```iterations``` and ```repetitions```. By default, the repetition count is one. Google Benchmark runs the benchmark a few times to determine a sufficiently-large iteration count.
+
+**Iteration**
+Google Benchmark tries to benchmark each candidate for a similar amount of time, and/or for long enough to get stable results. The benchmark counts how many iterations it actually did, along with the exact time. If you don't want use this cadidate you can change it by ```->Iterations(count)``` option under ```BENCHMARK``` macro.
+
+![empty_state_bench_output.png](./1_empty_state/empty_state_bench_output.png)
+
+**Repetitions**
+Google Benchmark can optionally run a benchmark run repeatedly and report statistics (median, mean, standard deviation) for the runs. To do so, pass the ```--benchmark_repetitions```.
+
+![optimization_bench_output.png](./8_optimization/optimization_bench_output.png)
+
 ## Samples
 
 More Google Benchmark tests can be found in [google/benchmark/test](https://github.com/google/benchmark/tree/main/test).
