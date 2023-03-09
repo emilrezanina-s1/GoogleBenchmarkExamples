@@ -5,7 +5,7 @@ This project serves as a demonstration of working with the Google Benchmark fram
 
 ## Google/Benchmark
 
-Source code of the Google Benchmark frame can be found [here](https://github.com/google/benchmark#usage).
+The source code of the Google Benchmark framework can be found [here](https://github.com/google/benchmark#usage).
 
 For more information:
 
